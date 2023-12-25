@@ -1,6 +1,7 @@
 package net.da_fence85.wonderdimension;
 
 import com.mojang.logging.LogUtils;
+import net.da_fence85.wonderdimension.block.ModBlocks;
 import net.da_fence85.wonderdimension.item.ModItems;
 import net.da_fence85.wonderdimension.util.ModCreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -37,6 +38,8 @@ public class WonderDimensionMod
 
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
+
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

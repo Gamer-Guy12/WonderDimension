@@ -1,6 +1,7 @@
 package net.da_fence85.wonderdimension.util;
 
 import net.da_fence85.wonderdimension.WonderDimensionMod;
+import net.da_fence85.wonderdimension.block.ModBlocks;
 import net.da_fence85.wonderdimension.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -24,6 +25,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.wonderdimension.wonder_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.WONDER_GEM.get());
+                        pOutput.accept(ModBlocks.WONDER_BLOCK.get());
                     })
                     .build());
 
