@@ -1,6 +1,8 @@
 package net.da_fence85.wonderdimension;
 
 import com.mojang.logging.LogUtils;
+import net.da_fence85.wonderdimension.item.ModItems;
+import net.da_fence85.wonderdimension.util.ModCreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -14,6 +16,10 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
+/**
+ * The mod starting point class
+ *
+ * */
 @Mod(WonderDimensionMod.MOD_ID)
 public class WonderDimensionMod
 {
@@ -28,6 +34,9 @@ public class WonderDimensionMod
     public WonderDimensionMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModCreativeModeTabs.register(modEventBus);
+        ModItems.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
