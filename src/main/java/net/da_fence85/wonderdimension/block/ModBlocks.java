@@ -1,6 +1,7 @@
 package net.da_fence85.wonderdimension.block;
 
 
+import com.mojang.logging.LogUtils;
 import net.da_fence85.wonderdimension.WonderDimensionMod;
 import net.da_fence85.wonderdimension.block.basic.WonderBlockBlock;
 import net.da_fence85.wonderdimension.block.basic.WonderOreBlock;
@@ -65,6 +66,7 @@ public class ModBlocks {
      *
      * */
     public static void register(IEventBus eventBus) {
+        LogUtils.getLogger().info("Registering blocks for mod with ID: " + WonderDimensionMod.MOD_ID);
         BLOCKS.register(eventBus);
     }
 

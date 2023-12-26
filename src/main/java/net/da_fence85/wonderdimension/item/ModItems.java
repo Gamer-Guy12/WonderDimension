@@ -1,5 +1,6 @@
 package net.da_fence85.wonderdimension.item;
 
+import com.mojang.logging.LogUtils;
 import net.da_fence85.wonderdimension.WonderDimensionMod;
 import net.da_fence85.wonderdimension.item.basic.ImpureWonderGemItem;
 import net.da_fence85.wonderdimension.item.basic.WonderGemItem;
@@ -29,6 +30,7 @@ public class ModItems {
      * @param eventBus This is the event bus passed in to register the deferred register
      * */
     public static void register(IEventBus eventBus) {
+        LogUtils.getLogger().info("Registering items for mod with ID: " + WonderDimensionMod.MOD_ID);
         ITEMS.register(eventBus);
     }
 

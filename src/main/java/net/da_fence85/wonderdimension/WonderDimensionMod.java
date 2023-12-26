@@ -36,6 +36,8 @@ public class WonderDimensionMod
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        LOGGER.info("Registering mod content for mod with ID: " + MOD_ID);
+
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
 
