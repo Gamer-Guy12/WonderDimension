@@ -3,6 +3,7 @@ package net.da_fence85.wonderdimension.block;
 
 import net.da_fence85.wonderdimension.WonderDimensionMod;
 import net.da_fence85.wonderdimension.block.basic.WonderBlockBlock;
+import net.da_fence85.wonderdimension.block.basic.WonderOreBlock;
 import net.da_fence85.wonderdimension.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -25,6 +26,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> WONDER_BLOCK = registerBlock("wonder_block",
             () -> new WonderBlockBlock());
+
+    public static final RegistryObject<Block> WONDER_ORE = registerBlock("wonder_ore",
+            () -> new WonderOreBlock());
 
     /**
      * This function registers a block and creates its item

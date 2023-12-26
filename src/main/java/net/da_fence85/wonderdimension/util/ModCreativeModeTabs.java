@@ -24,8 +24,13 @@ public class ModCreativeModeTabs {
                     .icon(() -> new ItemStack(ModItems.WONDER_GEM.get()))
                     .title(Component.translatable("creativetab.wonderdimension.wonder_tab"))
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(ModItems.WONDER_GEM.get());
-                        pOutput.accept(ModBlocks.WONDER_BLOCK.get());
+                        ModItems.ITEMS.getEntries().forEach((item) -> {
+                            pOutput.accept(item.get());
+                        });
+
+                        ModBlocks.BLOCKS.getEntries().forEach((block) -> {
+                            pOutput.accept(block.get());
+                        });
                     })
                     .build());
 

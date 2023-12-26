@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 1000,
+  "experience": 10,
+  "ingredient": {
+    "item": "wonderdimension:impure_wonder_gem"
+  },
+  "result": "wonderdimension:wonder_gem"
+}

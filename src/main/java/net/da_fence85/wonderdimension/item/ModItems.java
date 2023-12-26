@@ -1,6 +1,7 @@
 package net.da_fence85.wonderdimension.item;
 
 import net.da_fence85.wonderdimension.WonderDimensionMod;
+import net.da_fence85.wonderdimension.item.basic.ImpureWonderGemItem;
 import net.da_fence85.wonderdimension.item.basic.WonderGemItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -18,6 +19,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> WONDER_GEM =
             ITEMS.register("wonder_gem", () -> new WonderGemItem());
+
+    public static final RegistryObject<Item> IMPURE_WONDER_GEM =
+            ITEMS.register("impure_wonder_gem", () -> new ImpureWonderGemItem());
 
     /**
      * The method to register the items in this mod
