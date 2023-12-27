@@ -5,5 +5,16 @@
   "block.wonderdimension.wonder_block": "Wunderblock",
   "block.wonderdimension.wonder_ore": "Wundererz",
 
+  "item.wonderdimension.wonder_sword": "Wunderschwert",
+  "item.wonderdimension.wonder_axe": "Wunderaxt",
+  "item.wonderdimension.wonder_shovel": "Wunderschaufel",
+  "item.wonderdimension.wonder_pickaxe": "Wunder-Spitzhacke",
+  "item.wonderdimension.wonder_hoe": "Wunderhacke",
+
+  "item.wonderdimension.wonder_helmet": "Wunderhelm",
+  "item.wonderdimension.wonder_chestplate": "Wonder-Brustplatte",
+  "item.wonderdimension.wonder_leggings": "Wunder-Leggings",
+  "item.wonderdimension.wonder_boots": "Wunderstiefel",
+
   "creativetab.wonderdimension.wonder_tab": "Wunder Tab"
 }

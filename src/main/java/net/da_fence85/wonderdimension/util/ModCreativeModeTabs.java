@@ -2,7 +2,9 @@ package net.da_fence85.wonderdimension.util;
 
 import net.da_fence85.wonderdimension.WonderDimensionMod;
 import net.da_fence85.wonderdimension.block.ModBlocks;
+import net.da_fence85.wonderdimension.item.ModArmor;
 import net.da_fence85.wonderdimension.item.ModItems;
+import net.da_fence85.wonderdimension.item.ModTools;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -30,6 +32,14 @@ public class ModCreativeModeTabs {
 
                         ModBlocks.BLOCKS.getEntries().forEach((block) -> {
                             pOutput.accept(block.get());
+                        });
+
+                        ModTools.TOOLS.getEntries().forEach(tool -> {
+                            pOutput.accept(tool.get());
+                        });
+
+                        ModArmor.ARMOR.getEntries().forEach(armor -> {
+                            pOutput.accept(armor.get());
                         });
                     })
                     .build());

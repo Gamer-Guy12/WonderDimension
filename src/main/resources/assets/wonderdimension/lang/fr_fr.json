@@ -5,5 +5,16 @@
   "block.wonderdimension.wonder_block": "Bloc Merveille",
   "block.wonderdimension.wonder_ore": "Minerai Merveilleux",
 
+  "item.wonderdimension.wonder_sword": "Épée Merveilleuse",
+  "item.wonderdimension.wonder_axe": "Hache Merveilleuse",
+  "item.wonderdimension.wonder_shovel": "Pelle à Merveille",
+  "item.wonderdimension.wonder_pickaxe": "Pioche Merveilleuse",
+  "item.wonderdimension.wonder_hoe": "Merveilleuse Houe",
+
+  "item.wonderdimension.wonder_helmet": "Casque de Merveille",
+  "item.wonderdimension.wonder_chestplate": "Plastron des Merveilles",
+  "item.wonderdimension.wonder_leggings": "Merveille Legging",
+  "item.wonderdimension.wonder_boots": "Bottes de Merveille",
+
   "creativetab.wonderdimension.wonder_tab": "Onglet Merveille"
 }

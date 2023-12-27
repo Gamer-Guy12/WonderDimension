@@ -2,7 +2,10 @@ package net.da_fence85.wonderdimension;
 
 import com.mojang.logging.LogUtils;
 import net.da_fence85.wonderdimension.block.ModBlocks;
+import net.da_fence85.wonderdimension.item.ModArmor;
 import net.da_fence85.wonderdimension.item.ModItems;
+import net.da_fence85.wonderdimension.item.ModToolTiers;
+import net.da_fence85.wonderdimension.item.ModTools;
 import net.da_fence85.wonderdimension.util.ModCreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -40,6 +43,8 @@ public class WonderDimensionMod
 
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
+        ModTools.register(modEventBus);
+        ModArmor.register(modEventBus);
 
         ModBlocks.register(modEventBus);
 
