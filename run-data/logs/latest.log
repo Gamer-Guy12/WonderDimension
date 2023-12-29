@@ -1,0 +1,32 @@
+[29Dec2023 12:11:48.600] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\varun\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.1.3, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, wonderdimension, --all, --output, C:\Users\varun\OneDrive\Desktop\WonderDimension\src\generated\resources, --existing, C:\Users\varun\OneDrive\Desktop\WonderDimension\src\main\resources]
+[29Dec2023 12:11:48.617] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.9 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[29Dec2023 12:11:49.021] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[29Dec2023 12:11:49.216] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/varun/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[29Dec2023 12:11:50.212] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\varun\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.1.3\9775dc3f284cdb3e0d33b372c328c6ef88e434b0\javafmllanguage-1.20.1-47.1.3.jar is missing mods.toml file
+[29Dec2023 12:11:50.217] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\varun\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.1.3\d785f4087ec3be094fd5aed801f5366ca958a81b\lowcodelanguage-1.20.1-47.1.3.jar is missing mods.toml file
+[29Dec2023 12:11:50.225] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\varun\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.1.3\be60c45f3578cdf944a669c6ea16fd91bec50f2e\mclanguage-1.20.1-47.1.3.jar is missing mods.toml file
+[29Dec2023 12:11:50.235] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\varun\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.1.3\1aadc0201d8e97b107d9978c7fe066bb54bbb9dc\fmlcore-1.20.1-47.1.3.jar is missing mods.toml file
+[29Dec2023 12:11:50.410] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[29Dec2023 12:11:54.108] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\varun\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, wonderdimension, --all, --output, C:\Users\varun\OneDrive\Desktop\WonderDimension\src\generated\resources, --existing, C:\Users\varun\OneDrive\Desktop\WonderDimension\src\main\resources]
+[29Dec2023 12:11:55.125] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [wonderdimension]
+[29Dec2023 12:12:08.150] [modloading-worker-0/INFO] [net.da_fence85.wonderdimension.WonderDimensionMod/]: Registering mod content for mod with ID: wonderdimension
+[29Dec2023 12:12:08.230] [modloading-worker-0/INFO] [net.da_fence85.wonderdimension.item.ModItems/]: Registering items for mod with ID: wonderdimension
+[29Dec2023 12:12:08.233] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.1.3, for MC 1.20.1 with MCP 20230612.114412
+[29Dec2023 12:12:08.241] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.1.3 Initialized
+[29Dec2023 12:12:08.340] [modloading-worker-0/INFO] [net.da_fence85.wonderdimension.block.ModBlocks/]: Registering blocks for mod with ID: wonderdimension
+[29Dec2023 12:12:11.030] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/varun/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.1.3_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.1.3_mapped_parchment_2023.09.03-1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[29Dec2023 12:12:11.038] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/varun/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.1.3_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.1.3_mapped_parchment_2023.09.03-1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[29Dec2023 12:12:11.862] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[29Dec2023 12:12:11.982] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 119 ms
+[29Dec2023 12:12:11.983] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[29Dec2023 12:12:12.101] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 117 ms
+[29Dec2023 12:12:12.103] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: wonderdimension
+[29Dec2023 12:12:12.642] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: wonderdimension finished after 540 ms
+[29Dec2023 12:12:12.643] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: wonderdimension
+[29Dec2023 12:12:13.151] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: wonderdimension finished after 507 ms
+[29Dec2023 12:12:13.151] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id wonderdimension
+[29Dec2023 12:12:13.197] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id wonderdimension finished after 46 ms
+[29Dec2023 12:12:13.199] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id wonderdimension
+[29Dec2023 12:12:13.204] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id wonderdimension finished after 5 ms
+[29Dec2023 12:12:13.205] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 1343 ms
+[29Dec2023 12:12:13.378] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 73, old count: 73, new count: 74, removed stale: 0, written: 0

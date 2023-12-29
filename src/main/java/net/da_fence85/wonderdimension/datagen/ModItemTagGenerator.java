@@ -1,11 +1,13 @@
 package net.da_fence85.wonderdimension.datagen;
 
 import net.da_fence85.wonderdimension.WonderDimensionMod;
+import net.da_fence85.wonderdimension.item.ModArmor;
 import net.da_fence85.wonderdimension.item.ModItems;
 import net.da_fence85.wonderdimension.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -22,5 +24,11 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ModTags.Items.WONDER_ITEM)
                 .add(ModItems.IMPURE_WONDER_GEM.get())
                 .add(ModItems.WONDER_GEM.get());
+
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModArmor.WONDER_BOOTS.get())
+                .add(ModArmor.WONDER_CHESTPLATE.get())
+                .add(ModArmor.WONDER_LEGGINGS.get())
+                .add(ModArmor.WONDER_BOOTS.get());
     }
 }
