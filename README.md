@@ -7,6 +7,18 @@
 # Build
 To build this download the project find its directory then follow the steps:
 
+# Step 1
+
+# Windows
+
+`gradlew runData`
+
+# Linux/Mac
+
+`./gradlew runData`
+
+# Step 2
+
 # Windows
 
 `gradlew build`
