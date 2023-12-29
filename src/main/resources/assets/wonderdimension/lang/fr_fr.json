@@ -5,6 +5,17 @@
   "block.wonderdimension.wonder_block": "Bloc Merveille",
   "block.wonderdimension.wonder_ore": "Minerai Merveilleux",
 
+  "block.wonderdimension.wonder_button": "Bouton Merveille",
+  "block.wonderdimension.wonder_door": "Porte des Merveilles",
+  "block.wonderdimension.wonder_fence": "Clôture des Merveilles",
+  "block.wonderdimension.wonder_fence_gate": "Porte de Clôture Wonder",
+  "block.wonderdimension.wonder_pressure_plate": "Plaque de Pression Wonder",
+  "block.wonderdimension.wonder_slab": "Dalle Merveille",
+  "block.wonderdimension.wonder_stairs": "Escaliers Merveilleux",
+  "block.wonderdimension.wonder_trap_door": "Porte Piège à Merveille",
+  "block.wonderdimension.wonder_wall": "Mur des Merveilles",
+
+
   "item.wonderdimension.wonder_sword": "Épée Merveilleuse",
   "item.wonderdimension.wonder_axe": "Hache Merveilleuse",
   "item.wonderdimension.wonder_shovel": "Pelle à Merveille",

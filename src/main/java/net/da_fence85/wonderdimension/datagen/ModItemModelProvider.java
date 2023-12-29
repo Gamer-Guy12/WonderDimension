@@ -1,6 +1,7 @@
 package net.da_fence85.wonderdimension.datagen;
 
 import net.da_fence85.wonderdimension.WonderDimensionMod;
+import net.da_fence85.wonderdimension.block.ModBlocks;
 import net.da_fence85.wonderdimension.item.ModArmor;
 import net.da_fence85.wonderdimension.item.ModItems;
 import net.da_fence85.wonderdimension.item.ModTools;
@@ -12,11 +13,13 @@ import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.armortrim.TrimMaterial;
 import net.minecraft.world.item.armortrim.TrimMaterials;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.LinkedHashMap;
@@ -60,6 +63,19 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModArmor.WONDER_CHESTPLATE);
         trimmedArmorItem(ModArmor.WONDER_HELMET);
         trimmedArmorItem(ModArmor.WONDER_LEGGINGS);
+
+        simpleBlockItem(ModBlocks.WONDER_DOOR);
+
+        fenceItem(ModBlocks.WONDER_FENCE, ModBlocks.WONDER_BLOCK);
+        buttonItem(ModBlocks.WONDER_BUTTON, ModBlocks.WONDER_BLOCK);
+        wallItem(ModBlocks.WONDER_WALL, ModBlocks.WONDER_BLOCK);
+
+        evenSimplerBlockItem(ModBlocks.WONDER_STAIRS);
+        evenSimplerBlockItem(ModBlocks.WONDER_SLAB);
+        evenSimplerBlockItem(ModBlocks.WONDER_PRESSURE_PLATE);
+        evenSimplerBlockItem(ModBlocks.WONDER_FENCE_GATE);
+
+        trapdoorItem(ModBlocks.WONDER_TRAP_DOOR);
     }
 
     // Shoutout to El_Redstoniano for making this
@@ -119,6 +135,37 @@ public class ModItemModelProvider extends ItemModelProvider {
     private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation(WonderDimensionMod.MOD_ID,"item/" + item.getId().getPath()));
+    }
+
+    public void evenSimplerBlockItem(RegistryObject<Block> block) {
+        this.withExistingParent(WonderDimensionMod.MOD_ID + ":" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
+                modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath()));
+    }
+
+    public void trapdoorItem(RegistryObject<Block> block) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
+                modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath() + "_bottom"));
+    }
+
+    public void fenceItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/fence_inventory"))
+                .texture("texture",  new ResourceLocation(WonderDimensionMod.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+    }
+
+    public void buttonItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/button_inventory"))
+                .texture("texture",  new ResourceLocation(WonderDimensionMod.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+    }
+
+    public void wallItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/wall_inventory"))
+                .texture("wall",  new ResourceLocation(WonderDimensionMod.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+    }
+
+    private ItemModelBuilder simpleBlockItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(WonderDimensionMod.MOD_ID,"item/" + item.getId().getPath()));
     }
 }

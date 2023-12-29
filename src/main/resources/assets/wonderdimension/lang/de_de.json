@@ -5,6 +5,16 @@
   "block.wonderdimension.wonder_block": "Wunderblock",
   "block.wonderdimension.wonder_ore": "Wundererz",
 
+  "block.wonderdimension.wonder_button": "Wunderknopf",
+  "block.wonderdimension.wonder_door": "Wundertür",
+  "block.wonderdimension.wonder_fence": "Wunderzaun",
+  "block.wonderdimension.wonder_fence_gate": "Wunderzauntor",
+  "block.wonderdimension.wonder_pressure_plate": "Wonder-Druckplatte",
+  "block.wonderdimension.wonder_slab": "Wunderplatte",
+  "block.wonderdimension.wonder_stairs": "Wundertreppe",
+  "block.wonderdimension.wonder_trap_door": "Wunderbare Falltür",
+  "block.wonderdimension.wonder_wall": "Wunderwand",
+
   "item.wonderdimension.wonder_sword": "Wunderschwert",
   "item.wonderdimension.wonder_axe": "Wunderaxt",
   "item.wonderdimension.wonder_shovel": "Wunderschaufel",

@@ -5,6 +5,7 @@ import com.mojang.logging.LogUtils;
 import net.da_fence85.wonderdimension.WonderDimensionMod;
 import net.da_fence85.wonderdimension.block.basic.WonderBlockBlock;
 import net.da_fence85.wonderdimension.block.basic.WonderOreBlock;
+import net.da_fence85.wonderdimension.block.shaped.basic.*;
 import net.da_fence85.wonderdimension.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -26,10 +27,37 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, WonderDimensionMod.MOD_ID);
 
     public static final RegistryObject<Block> WONDER_BLOCK = registerBlock("wonder_block",
-            () -> new WonderBlockBlock());
+            WonderBlockBlock::new);
 
     public static final RegistryObject<Block> WONDER_ORE = registerBlock("wonder_ore",
-            () -> new WonderOreBlock());
+            WonderOreBlock::new);
+
+    public static final RegistryObject<Block> WONDER_BUTTON = registerBlock("wonder_button",
+            WonderButton::new);
+
+    public static final RegistryObject<Block> WONDER_DOOR = registerBlock("wonder_door",
+            WonderDoor::new);
+
+    public static final RegistryObject<Block> WONDER_FENCE = registerBlock("wonder_fence",
+            WonderFence::new);
+
+    public static final RegistryObject<Block> WONDER_FENCE_GATE = registerBlock("wonder_fence_gate",
+            WonderFenceGate::new);
+
+    public static final RegistryObject<Block> WONDER_PRESSURE_PLATE = registerBlock("wonder_pressure_plate",
+            WonderPressurePlate::new);
+
+    public static final RegistryObject<Block> WONDER_SLAB = registerBlock("wonder_slab",
+            WonderSlab::new);
+
+    public static final RegistryObject<Block> WONDER_STAIRS = registerBlock("wonder_stairs",
+            WonderStairs::new);
+
+    public static final RegistryObject<Block> WONDER_TRAP_DOOR = registerBlock("wonder_trap_door",
+            WonderTrapDoor::new);
+
+    public static final RegistryObject<Block> WONDER_WALL = registerBlock("wonder_wall",
+            WonderWall::new);
 
     /**
      * This function registers a block and creates its item

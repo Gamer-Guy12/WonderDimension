@@ -31,6 +31,19 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.WONDER_ORE.get(),
                 block -> createCopperOreLikeDrops(ModBlocks.WONDER_ORE.get(), ModItems.IMPURE_WONDER_GEM.get(), 1, 3));
+
+        this.dropSelf(ModBlocks.WONDER_BUTTON.get());
+        this.dropSelf(ModBlocks.WONDER_FENCE.get());
+        this.dropSelf(ModBlocks.WONDER_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.WONDER_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.WONDER_STAIRS.get());
+        this.dropSelf(ModBlocks.WONDER_TRAP_DOOR.get());
+        this.dropSelf(ModBlocks.WONDER_WALL.get());
+
+        this.add(ModBlocks.WONDER_DOOR.get(),
+                block -> createDoorTable(ModBlocks.WONDER_DOOR.get()));
+        this.add(ModBlocks.WONDER_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.WONDER_SLAB.get()));
     }
 
 
