@@ -1,6 +1,7 @@
 {
   "item.wonderdimension.wonder_gem": "Gemme Merveilleuse",
   "item.wonderdimension.impure_wonder_gem": "Gemme Merveilleuse Impure",
+  "item.wonderdimension.portal_key_fragment": "Fragment de clé de Portail",
 
   "block.wonderdimension.wonder_block": "Bloc Merveille",
   "block.wonderdimension.wonder_ore": "Minerai Merveilleux",
@@ -26,6 +27,8 @@
   "item.wonderdimension.wonder_chestplate": "Plastron des Merveilles",
   "item.wonderdimension.wonder_leggings": "Merveille Legging",
   "item.wonderdimension.wonder_boots": "Bottes de Merveille",
+
+  "message.wonderdimension.portal_key_fragment": "Veuillez créer une clé de portail en utilisant ceci",
 
   "creativetab.wonderdimension.wonder_tab": "Onglet Merveille"
 }

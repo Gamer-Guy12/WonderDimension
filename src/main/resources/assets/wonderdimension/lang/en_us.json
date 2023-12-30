@@ -1,6 +1,7 @@
 {
   "item.wonderdimension.wonder_gem": "Wonder Gem",
   "item.wonderdimension.impure_wonder_gem": "Impure Wonder Gem",
+  "item.wonderdimension.portal_key_fragment": "Portal Key Fragment",
 
   "block.wonderdimension.wonder_block": "Wonder Block",
   "block.wonderdimension.wonder_ore": "Wonder Ore",
@@ -25,6 +26,8 @@
   "item.wonderdimension.wonder_chestplate": "Wonder Chestplate",
   "item.wonderdimension.wonder_leggings": "Wonder Leggings",
   "item.wonderdimension.wonder_boots": "Wonder Boots",
+
+  "message.wonderdimension.portal_key_fragment": "Please create a portal key using this",
 
   "creativetab.wonderdimension.wonder_tab": "Wonder Tab"
 }

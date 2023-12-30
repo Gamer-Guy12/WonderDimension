@@ -3,6 +3,7 @@ package net.da_fence85.wonderdimension.item;
 import com.mojang.logging.LogUtils;
 import net.da_fence85.wonderdimension.WonderDimensionMod;
 import net.da_fence85.wonderdimension.item.basic.ImpureWonderGemItem;
+import net.da_fence85.wonderdimension.item.basic.PortalKeyFragmentItem;
 import net.da_fence85.wonderdimension.item.basic.WonderGemItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -19,10 +20,13 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, WonderDimensionMod.MOD_ID);
 
     public static final RegistryObject<Item> WONDER_GEM =
-            ITEMS.register("wonder_gem", () -> new WonderGemItem());
+            ITEMS.register("wonder_gem", WonderGemItem::new);
 
     public static final RegistryObject<Item> IMPURE_WONDER_GEM =
-            ITEMS.register("impure_wonder_gem", () -> new ImpureWonderGemItem());
+            ITEMS.register("impure_wonder_gem", ImpureWonderGemItem::new);
+
+    public static final RegistryObject<Item> PORTAL_KEY_FRAGMENT =
+            ITEMS.register("portal_key_fragment", PortalKeyFragmentItem::new);
 
     /**
      * The method to register the items in this mod

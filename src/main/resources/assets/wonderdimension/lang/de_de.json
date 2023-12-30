@@ -1,6 +1,7 @@
 {
   "item.wonderdimension.wonder_gem": "Wunderjuwel",
   "item.wonderdimension.impure_wonder_gem": "Unreines Wunderjuwel",
+  "item.wonderdimension.portal_key_fragment": "Portalschlüsselfragment",
 
   "block.wonderdimension.wonder_block": "Wunderblock",
   "block.wonderdimension.wonder_ore": "Wundererz",
@@ -25,6 +26,8 @@
   "item.wonderdimension.wonder_chestplate": "Wonder-Brustplatte",
   "item.wonderdimension.wonder_leggings": "Wunder-Leggings",
   "item.wonderdimension.wonder_boots": "Wunderstiefel",
+
+  "message.wonderdimension.portal_key_fragment": "Bitte erstellen Sie damit einen Portalschlüssel",
 
   "creativetab.wonderdimension.wonder_tab": "Wunder Tab"
 }

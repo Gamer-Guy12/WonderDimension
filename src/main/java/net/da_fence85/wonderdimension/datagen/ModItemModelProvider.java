@@ -47,6 +47,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         simpleItem(ModItems.IMPURE_WONDER_GEM);
         simpleItem(ModItems.WONDER_GEM);
+        simpleItem(ModItems.PORTAL_KEY_FRAGMENT);
 
         handheldItem(ModTools.WONDER_SWORD);
         handheldItem(ModTools.WONDER_AXE);
