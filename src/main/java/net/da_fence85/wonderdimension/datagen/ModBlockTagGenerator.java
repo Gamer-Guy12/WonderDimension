@@ -20,8 +20,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        this.tag(ModTags.Blocks.WONDER_BLOCKS)
-                .add(ModBlocks.WONDER_BLOCK.get(), ModBlocks.WONDER_ORE.get());
+        ModBlocks.BLOCKS.getEntries().forEach(block -> {
+            this.tag(ModTags.Blocks.WONDER_BLOCKS).add(block.get());
+        });
 
         this.tag(Tags.Blocks.ORES)
                 .add(ModBlocks.WONDER_ORE.get());
