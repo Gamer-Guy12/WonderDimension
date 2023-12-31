@@ -2,9 +2,14 @@ package net.da_fence85.wonderdimension.datagen;
 
 import net.da_fence85.wonderdimension.WonderDimensionMod;
 import net.da_fence85.wonderdimension.block.ModBlocks;
+import net.da_fence85.wonderdimension.item.ModArmor;
 import net.da_fence85.wonderdimension.item.ModItems;
+import net.da_fence85.wonderdimension.item.ModTools;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -37,6 +42,90 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModBlocks.WONDER_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.WONDER_BLOCK.get()), has(ModBlocks.WONDER_BLOCK.get()))
                 .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModArmor.WONDER_HELMET.get())
+                .pattern("###")
+                .pattern("# #")
+                .define('#', ModItems.WONDER_GEM.get())
+                .unlockedBy(getHasName(ModItems.WONDER_GEM.get()), has(ModItems.WONDER_GEM.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModArmor.WONDER_CHESTPLATE.get())
+                .pattern("# #")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.WONDER_GEM.get())
+                .unlockedBy(getHasName(ModItems.WONDER_GEM.get()), has(ModItems.WONDER_GEM.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModArmor.WONDER_LEGGINGS.get())
+                .pattern("###")
+                .pattern("# #")
+                .pattern("# #")
+                .define('#', ModItems.WONDER_GEM.get())
+                .unlockedBy(getHasName(ModItems.WONDER_GEM.get()), has(ModItems.WONDER_GEM.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModArmor.WONDER_BOOTS.get())
+                .pattern("# #")
+                .pattern("# #")
+                .define('#', ModItems.WONDER_GEM.get())
+                .unlockedBy(getHasName(ModItems.WONDER_GEM.get()), has(ModItems.WONDER_GEM.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModTools.WONDER_SWORD.get())
+                .pattern("#")
+                .pattern("#")
+                .pattern("@")
+                .define('#', ModItems.WONDER_GEM.get())
+                .define('@', Items.STICK)
+                .unlockedBy(getHasName(ModItems.WONDER_GEM.get()), has(ModItems.WONDER_GEM.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModTools.WONDER_AXE.get())
+                .pattern("##")
+                .pattern("#@")
+                .pattern(" @")
+                .define('#', ModItems.WONDER_GEM.get())
+                .define('@', Items.STICK)
+                .unlockedBy(getHasName(ModItems.WONDER_GEM.get()), has(ModItems.WONDER_GEM.get()))
+                .save(consumer, new ResourceLocation(WonderDimensionMod.MOD_ID, "wonder_axe_left_recipe"));
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModTools.WONDER_AXE.get())
+                .pattern("##")
+                .pattern("@#")
+                .pattern("@ ")
+                .define('#', ModItems.WONDER_GEM.get())
+                .define('@', Items.STICK)
+                .unlockedBy(getHasName(ModItems.WONDER_GEM.get()), has(ModItems.WONDER_GEM.get()))
+                .save(consumer, new ResourceLocation(WonderDimensionMod.MOD_ID, "wonder_axe_right_recipe"));
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModTools.WONDER_PICKAXE.get())
+                .pattern("###")
+                .pattern(" @ ")
+                .pattern(" @ ")
+                .define('#', ModItems.WONDER_GEM.get())
+                .define('@', Items.STICK)
+                .unlockedBy(getHasName(ModItems.WONDER_GEM.get()), has(ModItems.WONDER_GEM.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModTools.WONDER_SHOVEL.get())
+                .pattern("#")
+                .pattern("@")
+                .pattern("@")
+                .define('#', ModItems.WONDER_GEM.get())
+                .define('@', Items.STICK)
+                .unlockedBy(getHasName(ModItems.WONDER_GEM.get()), has(ModItems.WONDER_GEM.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModTools.WONDER_HOE.get())
+                .pattern("##")
+                .pattern(" @")
+                .pattern(" @")
+                .define('#', ModItems.WONDER_GEM.get())
+                .define('@', Items.STICK)
+                .unlockedBy(getHasName(ModItems.WONDER_GEM.get()), has(ModItems.WONDER_GEM.get()))
+                .save(consumer, new ResourceLocation(WonderDimensionMod.MOD_ID, "wonder_hoe_left_recipe"));
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModTools.WONDER_HOE.get())
+                .pattern("##")
+                .pattern("@ ")
+                .pattern("@ ")
+                .define('#', ModItems.WONDER_GEM.get())
+                .define('@', Items.STICK)
+                .unlockedBy(getHasName(ModItems.WONDER_GEM.get()), has(ModItems.WONDER_GEM.get()))
+                .save(consumer, new ResourceLocation(WonderDimensionMod.MOD_ID, "wonder_hoe_right_recipe"));
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
