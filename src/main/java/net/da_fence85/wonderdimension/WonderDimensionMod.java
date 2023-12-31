@@ -6,6 +6,7 @@ import net.da_fence85.wonderdimension.item.ModArmor;
 import net.da_fence85.wonderdimension.item.ModItems;
 import net.da_fence85.wonderdimension.item.ModToolTiers;
 import net.da_fence85.wonderdimension.item.ModTools;
+import net.da_fence85.wonderdimension.loot.ModLootModifiers;
 import net.da_fence85.wonderdimension.util.ModCreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -47,6 +48,8 @@ public class WonderDimensionMod
         ModArmor.register(modEventBus);
 
         ModBlocks.register(modEventBus);
+
+        ModLootModifiers.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
