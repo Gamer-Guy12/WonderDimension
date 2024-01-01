@@ -67,10 +67,20 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModArmor.WONDER_LEGGINGS);
         simpleItem(ModArmor.WONDER_HELMET);
 
+        simpleItem(ModArmor.PURE_WONDER_CHESTPLATE);
+        simpleItem(ModArmor.PURE_WONDER_BOOTS);
+        simpleItem(ModArmor.PURE_WONDER_HELMET);
+        simpleItem(ModArmor.PURE_WONDER_LEGGINGS);
+
         trimmedArmorItem(ModArmor.WONDER_BOOTS);
         trimmedArmorItem(ModArmor.WONDER_CHESTPLATE);
         trimmedArmorItem(ModArmor.WONDER_HELMET);
         trimmedArmorItem(ModArmor.WONDER_LEGGINGS);
+
+        trimmedArmorItem(ModArmor.PURE_WONDER_HELMET);
+        trimmedArmorItem(ModArmor.PURE_WONDER_CHESTPLATE);
+        trimmedArmorItem(ModArmor.PURE_WONDER_LEGGINGS);
+        trimmedArmorItem(ModArmor.PURE_WONDER_BOOTS);
 
         simpleBlockItem(ModBlocks.WONDER_DOOR);
 

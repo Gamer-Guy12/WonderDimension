@@ -183,6 +183,33 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('@', Items.STICK)
                 .unlockedBy(getHasName(ModItems.PURE_WONDER_GEM.get()), has(ModItems.PURE_WONDER_GEM.get()))
                 .save(consumer, new ResourceLocation(WonderDimensionMod.MOD_ID, "pure_wonder_hoe_right_recipe"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModArmor.PURE_WONDER_HELMET.get())
+                .pattern("###")
+                .pattern("# #")
+                .define('#', ModItems.PURE_WONDER_GEM.get())
+                .unlockedBy(getHasName(ModItems.PURE_WONDER_GEM.get()), has(ModItems.PURE_WONDER_GEM.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModArmor.PURE_WONDER_CHESTPLATE.get())
+                .pattern("# #")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.PURE_WONDER_GEM.get())
+                .unlockedBy(getHasName(ModItems.PURE_WONDER_GEM.get()), has(ModItems.PURE_WONDER_GEM.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModArmor.PURE_WONDER_LEGGINGS.get())
+                .pattern("###")
+                .pattern("# #")
+                .pattern("# #")
+                .define('#', ModItems.PURE_WONDER_GEM.get())
+                .unlockedBy(getHasName(ModItems.PURE_WONDER_GEM.get()), has(ModItems.PURE_WONDER_GEM.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModArmor.PURE_WONDER_BOOTS.get())
+                .pattern("# #")
+                .pattern("# #")
+                .define('#', ModItems.PURE_WONDER_GEM.get())
+                .unlockedBy(getHasName(ModItems.PURE_WONDER_GEM.get()), has(ModItems.PURE_WONDER_GEM.get()))
+                .save(consumer);
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
