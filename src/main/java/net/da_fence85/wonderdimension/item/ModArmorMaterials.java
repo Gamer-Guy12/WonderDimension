@@ -11,7 +11,9 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
     WONDER("wonder", 35, new int[] {7, 10, 8, 5}, 35, SoundEvents.ARMOR_EQUIP_NETHERITE,
-            2f, 3f, () -> Ingredient.of(ModItems.WONDER_GEM.get()));
+            2f, 3f, () -> Ingredient.of(ModItems.WONDER_GEM.get())),
+    PURE_WONDER("pure_wonder", 45, new int[] {7, 10, 8, 5}, 45, SoundEvents.ARMOR_EQUIP_NETHERITE,
+            3f, 4f, () -> Ingredient.of(ModItems.PURE_WONDER_GEM.get()));
 
     private final String name;
     private final int durabilityMultiplier;

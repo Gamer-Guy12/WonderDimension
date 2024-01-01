@@ -16,6 +16,7 @@ public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> WONDER_BLOCKS = tag("wonder_blocks");
         public static final TagKey<Block> NEEDS_WONDER_TOOL = tag("needs_wonder_tool");
+        public static final TagKey<Block> NEEDS_PURE_WONDER_TOOL = tag("needs_pure_wonder_tool");
 
         /**
          * The method to create a new block tag

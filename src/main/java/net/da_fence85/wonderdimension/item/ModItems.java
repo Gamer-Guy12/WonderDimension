@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.da_fence85.wonderdimension.WonderDimensionMod;
 import net.da_fence85.wonderdimension.item.basic.ImpureWonderGemItem;
 import net.da_fence85.wonderdimension.item.basic.PortalKeyFragmentItem;
+import net.da_fence85.wonderdimension.item.basic.PureWonderGemItem;
 import net.da_fence85.wonderdimension.item.basic.WonderGemItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -27,6 +28,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> PORTAL_KEY_FRAGMENT =
             ITEMS.register("portal_key_fragment", PortalKeyFragmentItem::new);
+
+    public static final RegistryObject<Item> PURE_WONDER_GEM =
+            ITEMS.register("pure_wonder_gem", PureWonderGemItem::new);
 
     /**
      * The method to register the items in this mod

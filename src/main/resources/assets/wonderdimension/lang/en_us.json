@@ -2,6 +2,7 @@
   "item.wonderdimension.wonder_gem": "Wonder Gem",
   "item.wonderdimension.impure_wonder_gem": "Impure Wonder Gem",
   "item.wonderdimension.portal_key_fragment": "Portal Key Fragment",
+  "item.wonderdimension.pure_wonder_gem": "Pure Wonder Gem",
 
   "block.wonderdimension.wonder_block": "Wonder Block",
   "block.wonderdimension.wonder_ore": "Wonder Ore",
@@ -21,6 +22,12 @@
   "item.wonderdimension.wonder_shovel": "Wonder Shovel",
   "item.wonderdimension.wonder_pickaxe": "Wonder Pickaxe",
   "item.wonderdimension.wonder_hoe": "Wonder Hoe",
+
+  "item.wonderdimension.pure_wonder_sword": "Pure Wonder Sword",
+  "item.wonderdimension.pure_wonder_axe": "Pure Wonder Axe",
+  "item.wonderdimension.pure_wonder_shovel": "Pure Wonder Shovel",
+  "item.wonderdimension.pure_wonder_pickaxe": "Pure Wonder Pickaxe",
+  "item.wonderdimension.pure_wonder_hoe": "Pure Wonder Hoe",
 
   "item.wonderdimension.wonder_helmet": "Wonder Helmet",
   "item.wonderdimension.wonder_chestplate": "Wonder Chestplate",

@@ -48,12 +48,19 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.IMPURE_WONDER_GEM);
         simpleItem(ModItems.WONDER_GEM);
         simpleItem(ModItems.PORTAL_KEY_FRAGMENT);
+        simpleItem(ModItems.PURE_WONDER_GEM);
 
         handheldItem(ModTools.WONDER_SWORD);
         handheldItem(ModTools.WONDER_AXE);
         handheldItem(ModTools.WONDER_SHOVEL);
         handheldItem(ModTools.WONDER_PICKAXE);
         handheldItem(ModTools.WONDER_HOE);
+
+        handheldItem(ModTools.PURE_WONDER_SWORD);
+        handheldItem(ModTools.PURE_WONDER_AXE);
+        handheldItem(ModTools.PURE_WONDER_SHOVEL);
+        handheldItem(ModTools.PURE_WONDER_PICKAXE);
+        handheldItem(ModTools.PURE_WONDER_HOE);
 
         simpleItem(ModArmor.WONDER_BOOTS);
         simpleItem(ModArmor.WONDER_CHESTPLATE);

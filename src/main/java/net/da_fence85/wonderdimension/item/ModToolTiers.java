@@ -22,4 +22,11 @@ public class ModToolTiers {
             new ResourceLocation(WonderDimensionMod.MOD_ID, "wonder_gem"),
             List.of(Tiers.NETHERITE), List.of()
     );
+
+    public static final Tier PURE_WONDER = TierSortingRegistry.registerTier(
+        new ForgeTier(15, 7500, 15f, 8f, 50, ModTags.Blocks.NEEDS_PURE_WONDER_TOOL,
+              () -> Ingredient.of(ModItems.PURE_WONDER_GEM.get())),
+        new ResourceLocation(WonderDimensionMod.MOD_ID, "pure_wonder_gem"),
+        List.of(ModToolTiers.WONDER), List.of()
+    );
 }

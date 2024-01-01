@@ -2,6 +2,7 @@
   "item.wonderdimension.wonder_gem": "Wunderjuwel",
   "item.wonderdimension.impure_wonder_gem": "Unreines Wunderjuwel",
   "item.wonderdimension.portal_key_fragment": "Portalschlüsselfragment",
+  "item.wonderdimension.pure_wonder_gem": "Pures Wunderjuwel",
 
   "block.wonderdimension.wonder_block": "Wunderblock",
   "block.wonderdimension.wonder_ore": "Wundererz",
@@ -21,6 +22,12 @@
   "item.wonderdimension.wonder_shovel": "Wunderschaufel",
   "item.wonderdimension.wonder_pickaxe": "Wunder-Spitzhacke",
   "item.wonderdimension.wonder_hoe": "Wunderhacke",
+
+  "item.wonderdimension.pure_wonder_sword": "Reines Wunderschwert",
+  "item.wonderdimension.pure_wonder_axe": "Reine Wunderaxt",
+  "item.wonderdimension.pure_wonder_shovel": "Reine Wunderschaufel",
+  "item.wonderdimension.pure_wonder_pickaxe": "Reine Wunderspitzhacke",
+  "item.wonderdimension.pure_wonder_hoe": "Reine Wunderhacke",
 
   "item.wonderdimension.wonder_helmet": "Wunderhelm",
   "item.wonderdimension.wonder_chestplate": "Wonder-Brustplatte",

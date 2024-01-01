@@ -126,6 +126,63 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('@', Items.STICK)
                 .unlockedBy(getHasName(ModItems.WONDER_GEM.get()), has(ModItems.WONDER_GEM.get()))
                 .save(consumer, new ResourceLocation(WonderDimensionMod.MOD_ID, "wonder_hoe_right_recipe"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModTools.PURE_WONDER_SWORD.get())
+                .pattern("#")
+                .pattern("#")
+                .pattern("@")
+                .define('#', ModItems.PURE_WONDER_GEM.get())
+                .define('@', Items.STICK)
+                .unlockedBy(getHasName(ModItems.PURE_WONDER_GEM.get()), has(ModItems.PURE_WONDER_GEM.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModTools.PURE_WONDER_AXE.get())
+                .pattern("##")
+                .pattern("#@")
+                .pattern(" @")
+                .define('#', ModItems.PURE_WONDER_GEM.get())
+                .define('@', Items.STICK)
+                .unlockedBy(getHasName(ModItems.PURE_WONDER_GEM.get()), has(ModItems.PURE_WONDER_GEM.get()))
+                .save(consumer, new ResourceLocation(WonderDimensionMod.MOD_ID, "pure_wonder_axe_left_recipe"));
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModTools.PURE_WONDER_AXE.get())
+                .pattern("##")
+                .pattern("@#")
+                .pattern("@ ")
+                .define('#', ModItems.PURE_WONDER_GEM.get())
+                .define('@', Items.STICK)
+                .unlockedBy(getHasName(ModItems.PURE_WONDER_GEM.get()), has(ModItems.PURE_WONDER_GEM.get()))
+                .save(consumer, new ResourceLocation(WonderDimensionMod.MOD_ID, "pure_wonder_axe_right_recipe"));
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModTools.PURE_WONDER_PICKAXE.get())
+                .pattern("###")
+                .pattern(" @ ")
+                .pattern(" @ ")
+                .define('#', ModItems.PURE_WONDER_GEM.get())
+                .define('@', Items.STICK)
+                .unlockedBy(getHasName(ModItems.PURE_WONDER_GEM.get()), has(ModItems.PURE_WONDER_GEM.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModTools.PURE_WONDER_SHOVEL.get())
+                .pattern("#")
+                .pattern("@")
+                .pattern("@")
+                .define('#', ModItems.PURE_WONDER_GEM.get())
+                .define('@', Items.STICK)
+                .unlockedBy(getHasName(ModItems.PURE_WONDER_GEM.get()), has(ModItems.PURE_WONDER_GEM.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModTools.PURE_WONDER_HOE.get())
+                .pattern("##")
+                .pattern(" @")
+                .pattern(" @")
+                .define('#', ModItems.PURE_WONDER_GEM.get())
+                .define('@', Items.STICK)
+                .unlockedBy(getHasName(ModItems.PURE_WONDER_GEM.get()), has(ModItems.PURE_WONDER_GEM.get()))
+                .save(consumer, new ResourceLocation(WonderDimensionMod.MOD_ID, "pure_wonder_hoe_left_recipe"));
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModTools.PURE_WONDER_HOE.get())
+                .pattern("##")
+                .pattern("@ ")
+                .pattern("@ ")
+                .define('#', ModItems.PURE_WONDER_GEM.get())
+                .define('@', Items.STICK)
+                .unlockedBy(getHasName(ModItems.PURE_WONDER_GEM.get()), has(ModItems.PURE_WONDER_GEM.get()))
+                .save(consumer, new ResourceLocation(WonderDimensionMod.MOD_ID, "pure_wonder_hoe_right_recipe"));
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
