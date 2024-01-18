@@ -5,6 +5,7 @@ import net.da_fence85.wonderdimension.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
@@ -18,6 +19,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.WONDER_BLOCK);
         blockWithItem(ModBlocks.WONDER_ORE);
+        blockWithItem(ModBlocks.PURE_WONDER_BLOCK);
 
         stairsBlock((StairBlock) ModBlocks.WONDER_STAIRS.get(), blockTexture(ModBlocks.WONDER_BLOCK.get()));
         slabBlock((SlabBlock) ModBlocks.WONDER_SLAB.get(), blockTexture(ModBlocks.WONDER_BLOCK.get()), blockTexture(ModBlocks.WONDER_BLOCK.get()));

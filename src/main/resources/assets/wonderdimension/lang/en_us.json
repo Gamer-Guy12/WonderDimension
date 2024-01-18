@@ -6,6 +6,9 @@
 
   "block.wonderdimension.wonder_block": "Wonder Block",
   "block.wonderdimension.wonder_ore": "Wonder Ore",
+  "block.wonderdimension.pure_wonder_block": "Pure Wonder Block",
+
+  "block.wonderdimension.wonder_station": "Wonder Station",
 
   "block.wonderdimension.wonder_button": "Wonder Button",
   "block.wonderdimension.wonder_door": "Wonder Door",
@@ -42,5 +45,8 @@
   "message.wonderdimension.portal_key_fragment": "Please create a portal key using this",
   "message.wonderdimension.siege": "There is a village siege",
 
-  "creativetab.wonderdimension.wonder_tab": "Wonder Tab"
+  "creativetab.wonderdimension.wonder_tab": "Wonder Tab",
+
+  "advancement.wonderdimension.joined.title": "You Joined",
+  "advancement.wonderdimension.joined.description": "You joined the game with this mod"
 }

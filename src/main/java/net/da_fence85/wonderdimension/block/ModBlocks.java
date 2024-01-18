@@ -3,9 +3,10 @@ package net.da_fence85.wonderdimension.block;
 
 import com.mojang.logging.LogUtils;
 import net.da_fence85.wonderdimension.WonderDimensionMod;
+import net.da_fence85.wonderdimension.block.basic.PureWonderBlockBlock;
 import net.da_fence85.wonderdimension.block.basic.WonderBlockBlock;
 import net.da_fence85.wonderdimension.block.basic.WonderOreBlock;
-import net.da_fence85.wonderdimension.block.shaped.basic.*;
+import net.da_fence85.wonderdimension.block.shaped.basic.wonder.*;
 import net.da_fence85.wonderdimension.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -58,6 +59,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> WONDER_WALL = registerBlock("wonder_wall",
             WonderWall::new);
+
+    public static final RegistryObject<Block> PURE_WONDER_BLOCK = registerBlock("pure_wonder_block",
+            PureWonderBlockBlock::new);
 
     /**
      * This function registers a block and creates its item

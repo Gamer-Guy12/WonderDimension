@@ -6,6 +6,9 @@
 
   "block.wonderdimension.wonder_block": "Wunderblock",
   "block.wonderdimension.wonder_ore": "Wundererz",
+  "block.wonderdimension.pure_wonder_block": "Reiner Wunderblock",
+
+  "block.wonderdimension.wonder_station": "Wunderstation",
 
   "block.wonderdimension.wonder_button": "Wunderknopf",
   "block.wonderdimension.wonder_door": "Wundertür",
@@ -42,5 +45,8 @@
   "message.wonderdimension.portal_key_fragment": "Bitte erstellen Sie damit einen Portalschlüssel",
   "message.wonderdimension.siege": "Es kommt zu einer Dorfbelagerung",
 
-  "creativetab.wonderdimension.wonder_tab": "Wunder Tab"
+  "creativetab.wonderdimension.wonder_tab": "Wunder Tab",
+
+  "advancement.wonderdimension.joined.title": "Du bist Beigetreten",
+  "advancement.wonderdimension.joined.description": "Mit diesem Mod bist du dem Spiel beigetreten"
 }

@@ -39,6 +39,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.WONDER_STAIRS.get());
         this.dropSelf(ModBlocks.WONDER_TRAP_DOOR.get());
         this.dropSelf(ModBlocks.WONDER_WALL.get());
+        this.dropSelf(ModBlocks.WONDER_STATION.get());
 
         this.add(ModBlocks.WONDER_DOOR.get(),
                 block -> createDoorTable(ModBlocks.WONDER_DOOR.get()));

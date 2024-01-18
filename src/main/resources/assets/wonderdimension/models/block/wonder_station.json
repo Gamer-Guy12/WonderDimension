@@ -1,0 +1,90 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "wonderdimension:block/wonder_station",
+		"particle": "wonderdimension:block/wonder_station"
+	},
+	"elements": [
+		{
+			"from": [14, 0, 0],
+			"to": [16, 6, 2],
+			"faces": {
+				"north": {"uv": [8, 4, 9, 7], "texture": "#0"},
+				"east": {"uv": [8, 7, 9, 10], "texture": "#0"},
+				"south": {"uv": [9, 4, 10, 7], "texture": "#0"},
+				"west": {"uv": [9, 7, 10, 10], "texture": "#0"},
+				"up": {"uv": [14, 8, 13, 7], "texture": "#0"},
+				"down": {"uv": [9, 13, 8, 14], "texture": "#0"}
+			}
+		},
+		{
+			"from": [14, 0, 14],
+			"to": [16, 6, 16],
+			"faces": {
+				"north": {"uv": [10, 4, 11, 7], "texture": "#0"},
+				"east": {"uv": [10, 7, 11, 10], "texture": "#0"},
+				"south": {"uv": [8, 10, 9, 13], "texture": "#0"},
+				"west": {"uv": [9, 10, 10, 13], "texture": "#0"},
+				"up": {"uv": [14, 9, 13, 8], "texture": "#0"},
+				"down": {"uv": [10, 13, 9, 14], "texture": "#0"}
+			}
+		},
+		{
+			"from": [0, 0, 14],
+			"to": [2, 6, 16],
+			"faces": {
+				"north": {"uv": [10, 10, 11, 13], "texture": "#0"},
+				"east": {"uv": [11, 4, 12, 7], "texture": "#0"},
+				"south": {"uv": [11, 7, 12, 10], "texture": "#0"},
+				"west": {"uv": [11, 10, 12, 13], "texture": "#0"},
+				"up": {"uv": [14, 10, 13, 9], "texture": "#0"},
+				"down": {"uv": [11, 13, 10, 14], "texture": "#0"}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [2, 6, 2],
+			"faces": {
+				"north": {"uv": [12, 4, 13, 7], "texture": "#0"},
+				"east": {"uv": [12, 7, 13, 10], "texture": "#0"},
+				"south": {"uv": [12, 10, 13, 13], "texture": "#0"},
+				"west": {"uv": [13, 4, 14, 7], "texture": "#0"},
+				"up": {"uv": [14, 11, 13, 10], "texture": "#0"},
+				"down": {"uv": [12, 13, 11, 14], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Base",
+			"from": [0, 6, 0],
+			"to": [16, 8, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [1, 7, 1]},
+			"faces": {
+				"north": {"uv": [8, 0, 16, 1], "texture": "#0"},
+				"east": {"uv": [8, 1, 16, 2], "texture": "#0"},
+				"south": {"uv": [8, 2, 16, 3], "texture": "#0"},
+				"west": {"uv": [8, 3, 16, 4], "texture": "#0"},
+				"up": {"uv": [8, 8, 0, 0], "texture": "#0"},
+				"down": {"uv": [8, 8, 0, 16], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "wonder_station",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"nbt": "{}",
+			"children": [
+				{
+					"name": "stilts",
+					"origin": [8, 8, 8],
+					"color": 0,
+					"nbt": "{}",
+					"children": [0, 1, 2, 3]
+				},
+				4
+			]
+		}
+	]
+}

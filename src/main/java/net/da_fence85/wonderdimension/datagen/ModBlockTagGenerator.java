@@ -30,8 +30,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.WONDER_BLOCK.get(), ModBlocks.WONDER_ORE.get());
 
+        this.tag(ModTags.Blocks.NEEDS_WONDER_TOOL)
+                .add(ModBlocks.PURE_WONDER_BLOCK.get());
+
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.WONDER_BLOCK.get(), ModBlocks.WONDER_ORE.get());
+                .add(ModBlocks.WONDER_BLOCK.get(), ModBlocks.WONDER_ORE.get(),
+                        ModBlocks.PURE_WONDER_BLOCK.get());
 
         this.tag(BlockTags.FENCES)
                 .add(ModBlocks.WONDER_FENCE.get());

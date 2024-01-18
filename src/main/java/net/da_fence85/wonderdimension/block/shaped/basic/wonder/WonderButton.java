@@ -1,4 +1,4 @@
-package net.da_fence85.wonderdimension.block.shaped.basic;
+package net.da_fence85.wonderdimension.block.shaped.basic.wonder;
 
 import net.da_fence85.wonderdimension.block.ModBlocks;
 import net.minecraft.world.level.block.ButtonBlock;

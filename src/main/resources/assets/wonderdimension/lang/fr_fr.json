@@ -6,6 +6,9 @@
 
   "block.wonderdimension.wonder_block": "Bloc Merveille",
   "block.wonderdimension.wonder_ore": "Minerai Merveilleux",
+  "block.wonderdimension.pure_wonder_block": "Bloc de Pure Merveille",
+
+  "block.wonderdimension.wonder_station": "Station des Merveilles",
 
   "block.wonderdimension.wonder_button": "Bouton Merveille",
   "block.wonderdimension.wonder_door": "Porte des Merveilles",
@@ -42,5 +45,8 @@
   "message.wonderdimension.portal_key_fragment": "Veuillez créer une clé de portail en utilisant ceci",
   "message.wonderdimension.siege": "Il y a un siège de village",
 
-  "creativetab.wonderdimension.wonder_tab": "Onglet Merveille"
+  "creativetab.wonderdimension.wonder_tab": "Onglet Merveille",
+
+  "advancement.wonderdimension.joined.title": "Vous avez Rejoint",
+  "advancement.wonderdimension.joined.description": "Vous avez rejoint le jeu avec ce mod"
 }
