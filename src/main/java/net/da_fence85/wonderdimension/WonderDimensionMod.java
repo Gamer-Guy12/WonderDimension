@@ -2,7 +2,6 @@ package net.da_fence85.wonderdimension;
 
 import com.mojang.logging.LogUtils;
 import net.da_fence85.wonderdimension.block.ModBlocks;
-import net.da_fence85.wonderdimension.block.advanced.entity.ModBlockEntities;
 import net.da_fence85.wonderdimension.item.ModArmor;
 import net.da_fence85.wonderdimension.item.ModItems;
 import net.da_fence85.wonderdimension.item.ModToolTiers;
@@ -51,8 +50,6 @@ public class WonderDimensionMod
         ModBlocks.register(modEventBus);
 
         ModLootModifiers.register(modEventBus);
-
-        ModBlockEntities.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
